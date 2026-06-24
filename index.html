@@ -507,6 +507,45 @@ html, body {
     display: block !important;
 }
 
+
+/* FINAL MOBILE OVERLAY FIX */
+@media (max-width: 899px) {
+    .main-layout {
+        display:block;
+        padding-bottom: 20px !important;
+    }
+
+    .menu-container {
+        padding-bottom: 450px !important;
+    }
+
+    .cart-wrapper {
+        position: relative !important;
+        bottom: auto !important;
+        left: auto !important;
+        right: auto !important;
+        margin-top: 20px;
+        max-height: none !important;
+        z-index: 1;
+        border-top: 2px solid var(--primary-color);
+    }
+
+    .cart-wrapper:not(.expanded) .cart-list,
+    .cart-wrapper:not(.expanded) .empty-cart-msg,
+    .cart-wrapper:not(.expanded) .download-img-btn,
+    .cart-wrapper:not(.expanded) .copy-text-btn,
+    .cart-wrapper:not(.expanded) .clear-cart-btn {
+        display: none !important;
+    }
+
+    .cart-container {
+        padding: 15px !important;
+    }
+
+    .order-options {
+        display:block !important;
+    }
+}
 </style>
 </head>
 <body>
